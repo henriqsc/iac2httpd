@@ -1,0 +1,8 @@
+services:
+  web:
+    container_name: httpd-underconstruction
+    image: httpd
+    ports:
+      - "8080:80"
+    volumes:
+      - /data/projeto_apache_yml:/usr/local/apache2/htdocs
